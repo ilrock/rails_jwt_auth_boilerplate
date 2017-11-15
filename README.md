@@ -1,24 +1,7 @@
-# README
+# RAILS 5 BOILERPLATE WITH JWT AUTHENTICATION
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Clone the repo
+* Run bundle and install all the gems (this includes dotenv-rails, knock, bcrypt and jbuilder)
+* Create a .env file and set the variables DB_USER, DB_PASSWORD, DB_PORT that will be used in database.yml
+* Migrate the DB
+* You're good to go
