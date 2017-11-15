@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: private_storage_development
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  port: <%= ENV['DB_PORT'] %>
+
+test:
+  <<: *default
+  database: aprivate_storage_test
+
+production:
+  <<: *default
+  database: private_storage_production
+  username: api
+  password: <%= ENV['API_DATABASE_PASSWORD'] %>
